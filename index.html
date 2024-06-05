@@ -11,9 +11,9 @@
 
     <div>
       <!-- 
-       IMAGE RWD
-      srcset: le choix des différentes source d'image selon la taille imposé
-      sizes: liste des point de changement d'image en px ou vw.
+       IMAGE responsive
+      srcset: le choix des différentes source d'image selon la densité de pixel
+      sizes: condition selon laquelle l'image s'affiche.
       -->
       <h2>IMG</h2>
       <img
@@ -37,14 +37,27 @@
           srcset="./assets/imgs/02.jpg 200w, ./assets/imgs/02.jpg 50vw  "
           media="(orientation: portrait)"
         />
-        <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="…" />
+        <img
+          src="https://placehold.co/600x400"
+          alt="image de remplacement au cas ou la source est défaillante"
+        />
       </picture>
     </div>
     <div>
       <!--
-      FIGURE: 
-       Toujours utiliser pour la direction artistique
+      PICTURE: 
+       Souvent utilisé pour la direction artistique du l'image
      -->
+      <figure>
+        <img
+          src="https://placehold.co/600x400"
+          alt="The Pulpit Rock"
+          width="600"
+          height="400"
+        />
+        <figcaption>Geeks logo</figcaption>
+      </figure>
+      <hr />
       <figure>
         <img src="./assets/imgs/03.jpg" alt="…" class="image-size" />
         <img
@@ -59,6 +72,7 @@
         />
         <figcaption>La légende</figcaption>
       </figure>
+      <hr />
       <figure>
         <p style="white-space: pre">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nemo
