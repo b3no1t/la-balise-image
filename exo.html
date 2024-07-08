@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pictures/Img/Figure</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h2>Figure</h2>
+        <figure>
+          <img
+            src="./assets/imgs/02.jpg"
+            alt="texte alternatif"
+            width="320px"
+          />
+          <figcaption>
+            légende: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Eveniet quo dignissimos voluptate?
+          </figcaption>
+        </figure>
+        <hr />
+        <picture>
+          <source srcset="./assets/imgs/01.jpg 200w" />
+          <source srcset="./assets/imgs/02.jpg 860w" />
+          <img srcset="./assets/imgs/03.jpg" alt="" />
+          <!-- Always add a <img ...> in picture otherwise don't work -->
+        </picture>
+      </div>
+    </div>
+  </body>
+</html>
